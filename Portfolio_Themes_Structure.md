@@ -146,7 +146,7 @@ portfolio-themes/
 #### Key Features
 - **API Integration**: Fetches data from Laravel backend
   ```javascript
-  fetch(`https://tricloud.faremit.com/api/portfolio/${username}`)
+  fetch(`http://127.0.0.1:8000/api/portfolio/${username}`)
   ```
 - **Dynamic Data Rendering**: All sections conditionally render based on API data
 - **Comprehensive Sections**: Services, Clients, Portfolio, Awards, Testimonials, Blogs
@@ -235,7 +235,7 @@ export default function ThemePage() {
   const [userData, setUserData] = useState(null);
   
   useEffect(() => {
-    fetch(`https://tricloud.faremit.com/api/portfolio/${username}`)
+    fetch(`http://127.0.0.1:8000/api/portfolio/${username}`)
       .then(res => res.json())
       .then(data => setUserData(data.user));
   }, [username]);
@@ -367,7 +367,7 @@ const ThemeLayout = ({ userData }) => {
 
 ### API Endpoint
 ```
-GET https://tricloud.faremit.com/api/portfolio/{username}
+GET http://127.0.0.1:8000/api/portfolio/{username}
 ```
 
 ### Response Structure

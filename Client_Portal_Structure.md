@@ -73,7 +73,7 @@ portfolio-client-portal/
 ## 🔐 Authentication System
 
 ### API Configuration
-**Base URL**: `https://tricloud.faremit.com/individual/`
+**Base URL**: `http://127.0.0.1:8000/individual/`
 
 #### API Service (`apiConfig.js`)
 ```javascript
@@ -331,7 +331,7 @@ Dashboard Layout (2-column)
 
 #### Base Configuration
 ```javascript
-BASE_URL: "https://tricloud.faremit.com/individual/"
+BASE_URL: "http://127.0.0.1:8000/individual/"
 ```
 
 #### Authentication

@@ -115,7 +115,7 @@ export default function YourThemePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://tricloud.faremit.com/api/portfolio/${username}`)
+    fetch(`http://127.0.0.1:8000/api/portfolio/${username}`)
       .then(res => res.json())
       .then(data => {
         setUserData(data.user);
@@ -341,7 +341,7 @@ Before marking a theme as complete:
 - Verify imports are correct
 
 ### Data Not Displaying
-- Check API endpoint: `https://tricloud.faremit.com/api/portfolio/{username}`
+- Check API endpoint: `http://127.0.0.1:8000/api/portfolio/{username}`
 - Verify userData is being set in state
 - Check conditional rendering logic
 
