@@ -73,7 +73,7 @@ portfolio-client-portal/
 ## 🔐 Authentication System
 
 ### API Configuration
-**Base URL**: `http://127.0.0.1:8000/individual/`
+**Base URL**: `http://192.168.19.106:8000/individual/`
 
 #### API Service (`apiConfig.js`)
 ```javascript
@@ -331,7 +331,7 @@ Dashboard Layout (2-column)
 
 #### Base Configuration
 ```javascript
-BASE_URL: "http://127.0.0.1:8000/individual/"
+BASE_URL: "http://192.168.19.106:8000/individual/"
 ```
 
 #### Authentication
